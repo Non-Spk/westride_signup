@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 2em;
+    margin: 1px 0;
+    display: block;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fff;
+    border-radius: 25px;
+    height: 480px;
+    overflow: hidden;
+    box-shadow: 5px 15px 8px rgba(66, 64, 64, 0.3);
+}
+
+.sign-in, .sign-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.sign-in {
+    input {
+        width: 40vh;
+        background-color: #EEEEEE;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+    }
+    span {
+        font-size: 12px;
+        color: #757575;
+    }
+    a {
+        font-size: 14px;
+        color: #757575;
+        text-decoration: none;
+    }
+    button {
+        background-color: #FF4B2B;
+        color: #fff;
+        border: none;
+        width: 120px;
+        padding: 10px 20px;
+        border-radius: 25px;
+        font-weight: bold;
+        margin-top: 10px;
+        transition: transform 0.3s ease-in-out;
+    }
+    button:active {
+        transform: scale(0.95);
+    }
+}
+
+.sign-up {
+    color: #fff;
+    background: rgb(255,70,75);
+    background: linear-gradient(90deg, rgba(255,70,75,1) 0%, rgba(255,65,108,1) 100%);
+    button {
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+        width: 120px;
+        padding: 10px 20px;
+        border-radius: 25px;
+        font-weight: bold;
+        margin-top: 10px;
+        text-align: center;
+        justify-content: center;
+        transition: transform 0.3s ease-in-out;
+    }
+    button:active {
+        transform: scale(0.95);
+    }
+    p {
+        width: 80%;
+        text-align: center;
+        font-size: 14px;
+    }
+}
